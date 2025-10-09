@@ -1,30 +1,41 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <link rel="icon" href="./IMG folder/favicon.svg">
-    <link rel="stylesheet" href="/style.css">
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Fotogramm</title>
-</head>
-<body onload="loadImages()">
-      <header class="header">
-        <div id="gallery"></div>
-        </a>
+    <link rel="icon" href="./IMG_folder/Fotogram_logo/favicon.svg" />
+    <link rel="stylesheet" href="style.css" />
+  </head>
 
-        <nav>
-            <img class="logo" src="IMG folder/Fotogram_logo/Fotogram_Logo.svg" alt="Fotogram_Logo">
-        </nav>
-      </header>
-      <section class="main-section">
-        <h1 class="h1">Your personal photo album</h1>
-      </section>
+  <body>
+    <header class="header">
+      <nav>
+        <img
+          class="logo"
+          src="IMG_folder/Fotogram_logo/Fotogram_Logo.svg"
+          alt="Fotogram_Logo"
+        />
+      </nav>
+    </header>
 
+    <main class="main-section">
+      <h1 class="h1">Your personal photo album</h1>
+      <div class="img-container"></div>
+    </main>
 
-      <footer class="footer">
-        <img class="footer_IMG" src="IMG folder/Fotogram_logo/favicon.svg" alt="favicon">
-        <p class="p_tag">© 2024 Fotogramm. All rights reserved.</p>
-      </footer>
-</body>
-<script src="script.js"></script>
+    <footer class="footer">
+      <img
+        class="footer_IMG"
+        src="IMG_folder/Fotogram_logo/favicon.svg"
+        alt="favicon"
+      />
+      <p class="p_tag">© 2024 Fotogramm. All rights reserved.</p>
+    </footer>
+
+    <div id="modal" class="modal no-display">
+      <img id="modal-image" src="./IMG_folder/photos/berlin.jpg" alt="berlin" />
+    </div>
+    <script src="script.js" defer></script>
+  </body>
 </html>
