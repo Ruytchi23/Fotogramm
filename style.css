@@ -54,34 +54,3 @@ h1 {
   justify-content: center;
   font-family: "raleway", sans-serif;
 }
-
-.img-container {
-  display: flex;
-  gap: 16px;
-  padding: 24px;
-}
-
-.img-container img {
-  width: 100%;
-  margin-top: 100px;
-  height: 220px;
-  object-fit: cover;
-  border-radius: 12px;
-}
-
-.modal {
-  background-color: rgb(0, 0, 0, 0.8);
-  width: 100vw;
-  height: 100vh;
-  left: 0;
-  top: 0;
-  position: fixed;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  z-index: 10;
-}
-
-.no-display {
-  display: none;
-}
