@@ -1,9 +1,25 @@
 const myImg = [
-  "./IMG_folder/Photos/berlin.jpg",
-  "./IMG_folder/Photos/Finland.jpg",
-  "./IMG_folder/Photos/Holland.jpg",
-  "./IMG_folder/Photos/London.jpg",
-  "./IMG_folder/Photos/NewYork.jpg",
-  "./IMG_folder/Photos/stockholm.jpg",
+  "berlin.jpg",
+  "Finland.jpg",
+  "Holland.jpg",
+  "London.jpg",
+  "NewYork.jpg",
+  "stockholm.jpg",
 ];
 
+function init() {
+
+generateTemplate();
+
+}
+
+function generateTemplate() {
+  let content = document.getElementById("img-container")
+
+  for (let index = 0; index < myImg.length; index++) {
+    
+    content.innerHTML += `<button>
+                          <img src="./IMG_folder/Photos/${myImg[index]}" alt="${myImg[index]}">
+                        </button>`;
+  }
+}

@@ -8,7 +8,7 @@
     <link rel="stylesheet" href="style.css" />
   </head>
 
-  <body>
+  <body onload="init()">
     <header class="header">
       <nav>
         <img
@@ -21,7 +21,7 @@
 
     <main class="main-section">
       <h1 class="h1">Your personal photo album</h1>
-      <div class="img-container"></div>
+      <div id="img-container"></div>
     </main>
 
     <footer class="footer">
@@ -30,12 +30,12 @@
         src="IMG_folder/Fotogram_logo/favicon.svg"
         alt="favicon"
       />
-      <p class="p_tag">© 2024 Fotogramm. All rights reserved.</p>
+      <p class="p_tag">© 2025 Fotogramm. All rights reserved.</p>
     </footer>
 
     <div id="modal" class="modal no-display">
-      <img id="modal-image" src="./IMG_folder/photos/berlin.jpg" alt="berlin" />
     </div>
     <script src="script.js" defer></script>
   </body>
+  
 </html>
