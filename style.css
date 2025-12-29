@@ -33,6 +33,7 @@ h1 {
   display: flex;
   justify-content: center;
   padding-top: 50px;
+  padding-bottom: 50px;
   font-family: "raleway", sans-serif;
 }
 
@@ -55,9 +56,13 @@ h1 {
   font-family: "raleway", sans-serif;
 }
 
-.body {
-  height: 100vh;
-  margin: 0;
+body {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+main {
+  flex: 1;
 }
 
 .img_size {
@@ -81,4 +86,9 @@ button img {
 
 dialog {
   margin: auto;
+}
+
+.button_size {
+  display: flex;
+  justify-content: space-around;
 }
