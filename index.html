@@ -8,7 +8,7 @@
     <link rel="stylesheet" href="style.css" />
   </head>
 
-  <body onload="init()">
+  <body class="body" onload="init()">
     <header class="header">
       <nav>
         <img
@@ -22,7 +22,17 @@
     <main class="main-section">
       <h1 class="h1">Your personal photo album</h1>
       <div id="img-container"></div>
-    </main>
+
+     <dialog id="myDialog">
+      <header>
+  <button onclick="closeDialog()">✕</button>
+</header>
+  <img id="dialogImg">
+  <footer>
+  </footer>
+</dialog>
+
+
 
     <footer class="footer">
       <img
