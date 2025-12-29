@@ -26,7 +26,6 @@
 .main-section {
   background-color: #071820;
   background-size: cover;
-  height: 706px;
 }
 h1 {
   color: white;
@@ -78,17 +77,29 @@ object-fit: cover;
   flex-wrap: wrap;
   height: auto;
   gap: 10px;
+  padding-bottom: 41px;
 }
 button img {
   display: block;
 }
 
-
 dialog {
   margin: auto;
 }
+dialog::backdrop {
+  background-color: #0a222ce7;
+}
+.dialogIMG{
+  height: 650px;
+} 
+.closeButtonDialog {
+  display:flex;
+  justify-content: end;
+  background-color: #0a222c;
 
+}
 .button_size {
   display: flex;
   justify-content: space-around;
+  background-color: #0a222c;
 }

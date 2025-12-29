@@ -8,7 +8,7 @@
     <link rel="stylesheet" href="style.css" />
   </head>
 
-  <body class="body" onload="init()">
+  <body class="body" onload="generateTemplate()">
     <header class="header">
       <nav>
         <img
@@ -20,15 +20,14 @@
     </header>
 
     <main class="main-section">
-      <h1 class="h1">Your personal photo album</h1>
+      <h1 class="h1">My personal photo album</h1>
       <div id="img-container"></div>
 
      <dialog id="myDialog">
-      <header>
-  <button onclick="closeDialog()">✕</button>
+      <header class="closeButtonDialog">
+  <button aria-label="Dialog schlißen" onclick="closeDialog()">🅧</button>
 </header>
-  <img id="dialogImg">
-  <footer></footer>
+  <img class="dialogIMG" id="dialogImg">
   <div class="button_size">
     <button>⬅️</button>
     <button>➡️</button>
