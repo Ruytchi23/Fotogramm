@@ -30,3 +30,15 @@ function openDialog(index) {
 function closeDialog() {
   dialogRef.close();
 }
+
+keyPressLeft()
+function keyPressLeft() {
+
+document.getElementById("leftButton").innerHTML = `<button onclick="keypress()">⬅️</button>`;
+
+};
+
+function keypress() {
+
+  
+}
