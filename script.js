@@ -10,10 +10,9 @@ const myImg = [
 ];
 
 function generateTemplate() {
-  let content = document.getElementById("img-container")
-content.innerHTML = "";
+  let content = document.getElementById("img-container");
+  content.innerHTML = "";
   for (let index = 0; index < myImg.length; index++) {
-    
     content.innerHTML += `<button aria-haspopup="dialog" aria-controls="myDialog" onclick="openDialog(${index})">
                           <img class="img_size" src="./IMG_folder/Photos/${myImg[index]}",  alt="${myImg[index]}">
                         </button>`;
