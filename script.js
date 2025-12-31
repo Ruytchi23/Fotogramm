@@ -39,6 +39,10 @@ document.getElementById("leftButton").innerHTML = `<button onclick="keypress()">
 };
 
 function keypress() {
-
+if (leftButton.clicked == true) {
+  console.log("hello");
   
-}
+}else
+console.log("nothing");
+
+} //lass ich für morgen stehen ist alles aber falsch :D
