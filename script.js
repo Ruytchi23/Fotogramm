@@ -31,5 +31,32 @@ function closeDialog() {
   dialogRef.close();
 }
 
+let leftButton = document.getElementById("leftButton");
+leftButton.onclick = previous;
+function previous() {
+  let actualIMG = dialogImg.src;
+  for (let index = 0; index < myImg.length; index++) {
+    if (actualIMG.includes(myImg[index])) {
+      if (index == 0) {
+        dialogImg.src = `./IMG_folder/Photos/${myImg[myImg.length - 1]}`;
+      } else {
+        dialogImg.src = `./IMG_folder/Photos/${myImg[index - 1]}`;
+      }
+    }
+  }
+}
 
-
+let rightButton = document.getElementById("rightButton");
+rightButton.onclick = next;
+function next() {
+  let actualIMG = dialogImg.src;
+  for (let index = 0; index < myImg.length; index++) {
+    if (actualIMG.includes(myImg[index])) {
+      if (index == myImg.length - 1) {
+        dialogImg.src = `./IMG_folder/Photos/${myImg[0]}`;
+      } else {
+        dialogImg.src = `./IMG_folder/Photos/${myImg[index + 1]}`;
+      }
+    }
+  }
+}
