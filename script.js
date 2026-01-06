@@ -21,9 +21,11 @@ function generateTemplate() {
 
 let dialogRef = document.getElementById("myDialog");
 let dialogImg = document.getElementById("dialogImg");
+let side_Numbers = document.getElementById("page_Numbers")
 
 function openDialog(index) {
   dialogImg.src = `./IMG_folder/Photos/${myImg[index]}`;
+  side_Numbers.innerHTML = `${index +1}/8`;
   dialogRef.showModal();
 }
 
@@ -39,12 +41,17 @@ function previous() {
     if (actualIMG.includes(myImg[index])) {
       if (index == 0) {
         dialogImg.src = `./IMG_folder/Photos/${myImg[myImg.length - 1]}`;
+        side_Numbers.innerHTML = `${myImg.length}/8`;
       } else {
         dialogImg.src = `./IMG_folder/Photos/${myImg[index - 1]}`;
+        side_Numbers.innerHTML = `${index}/8`;
       }
     }
   }
 }
+
+
+
 
 let rightButton = document.getElementById("rightButton");
 rightButton.onclick = next;
@@ -54,8 +61,10 @@ function next() {
     if (actualIMG.includes(myImg[index])) {
       if (index == myImg.length - 1) {
         dialogImg.src = `./IMG_folder/Photos/${myImg[0]}`;
+        side_Numbers.innerHTML = `1/8`;
       } else {
         dialogImg.src = `./IMG_folder/Photos/${myImg[index + 1]}`;
+        side_Numbers.innerHTML = `${index + 2}/8`;
       }
     }
   }

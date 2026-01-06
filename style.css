@@ -102,3 +102,8 @@ dialog::backdrop {
   justify-content: space-around;
   background-color: #0a222c;
 }
+
+.page_Number {
+  font-size: 34px;
+  color: white;
+}
