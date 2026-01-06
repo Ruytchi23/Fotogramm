@@ -21,11 +21,11 @@ function generateTemplate() {
 
 let dialogRef = document.getElementById("myDialog");
 let dialogImg = document.getElementById("dialogImg");
-let side_Numbers = document.getElementById("page_Numbers")
+let side_Numbers = document.getElementById("page_Numbers");
 
 function openDialog(index) {
   dialogImg.src = `./IMG_folder/Photos/${myImg[index]}`;
-  side_Numbers.innerHTML = `${index +1}/8`;
+  side_Numbers.innerHTML = `${index + 1}/8`;
   dialogRef.showModal();
 }
 
@@ -49,9 +49,6 @@ function previous() {
     }
   }
 }
-
-
-
 
 let rightButton = document.getElementById("rightButton");
 rightButton.onclick = next;
