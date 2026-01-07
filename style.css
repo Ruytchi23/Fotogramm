@@ -89,7 +89,10 @@ dialog::backdrop {
   background-color: #0a222ce7;
 }
 .dialogIMG {
-  height: 650px;
+  width: 850px;
+  height: 850px;
+  max-width: 800px;
+  max-height: 800px;
   display: block;
 }
 .closeButtonDialog {
@@ -118,13 +121,21 @@ dialog::backdrop {
 @media (max-width: 570px) {
   .dialogIMG {
     width: 400px;
-    height: auto;
+    height: 300px;
+    max-width: 300px;
+    max-height: 300px;
   }
 }
 
 @media (max-width: 370px) {
   .dialogIMG {
     width: 300px;
-    height: auto;
+    height: 250;
+    max-width: 200px;
+    max-height: 200px;
   }
+}
+
+button {
+  cursor: pointer;
 }

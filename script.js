@@ -9,19 +9,23 @@ const myImg = [
   "boston-harbor-boston-ma-usa.jpg",
 ];
 
+let dialogRef = document.getElementById("myDialog");
+let dialogImg = document.getElementById("dialogImg");
+let side_Numbers = document.getElementById("page_Numbers");
+let leftButton = document.getElementById("leftButton");
+let rightButton = document.getElementById("rightButton");
+rightButton.onclick = next;
+leftButton.onclick = previous;
+
 function generateTemplate() {
   let content = document.getElementById("img-container");
   content.innerHTML = "";
   for (let index = 0; index < myImg.length; index++) {
-    content.innerHTML += `<button aria-haspopup="dialog" aria-controls="myDialog" onclick="openDialog(${index})">
+    content.innerHTML += `<button id="IMG_Dialog" aria-haspopup="dialog" aria-controls="myDialog" onclick="openDialog(${index})">
                           <img class="img_size" src="./IMG_folder/Photos/${myImg[index]}" alt="${myImg[index]}">
                         </button>`;
   }
 }
-
-let dialogRef = document.getElementById("myDialog");
-let dialogImg = document.getElementById("dialogImg");
-let side_Numbers = document.getElementById("page_Numbers");
 
 function openDialog(index) {
   dialogImg.src = `./IMG_folder/Photos/${myImg[index]}`;
@@ -33,8 +37,6 @@ function closeDialog() {
   dialogRef.close();
 }
 
-let leftButton = document.getElementById("leftButton");
-leftButton.onclick = previous;
 function previous() {
   let actualIMG = dialogImg.src;
   for (let index = 0; index < myImg.length; index++) {
@@ -50,8 +52,6 @@ function previous() {
   }
 }
 
-let rightButton = document.getElementById("rightButton");
-rightButton.onclick = next;
 function next() {
   let actualIMG = dialogImg.src;
   for (let index = 0; index < myImg.length; index++) {
