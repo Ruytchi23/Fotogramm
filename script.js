@@ -73,9 +73,10 @@ function logdownprevention(event) {
 }
 
 
-function backdropEvent(event) {
-
-
-document.addEventListener('click', (event))
-const isInDialog = event.target.closest('dialog');	
-}
+myDialog.addEventListener("click", (event) => {
+  if (event.target === myDialog) {
+    closeDialog();
+    console.log("Listener");
+    
+  }
+});
