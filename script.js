@@ -1,9 +1,9 @@
 const myImg = [
   "berlin.jpg",
-  "finland.jpg",
-  "holland.jpg",
-  "london.jpg",
-  "newyork.jpg",
+  "Finland.jpg",
+  "Holland.jpg",
+  "London.jpg",
+  "NewYork.jpg",
   "stockholm.jpg",
   "kilchurn-castle-schottland.jpg",
   "boston-harbor-boston-ma-usa.jpg",
