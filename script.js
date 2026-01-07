@@ -72,11 +72,9 @@ function logdownprevention(event) {
   event.stopPropagation();
 }
 
-
 myDialog.addEventListener("click", (event) => {
   if (event.target === myDialog) {
     closeDialog();
     console.log("Listener");
-    
   }
 });
