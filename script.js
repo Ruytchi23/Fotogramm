@@ -3,10 +3,10 @@ const myImg = [
   "finland.jpg",
   "holland.jpg",
   "london.jpg",
-  "newYork.jpg",
+  "newyork.jpg",
   "stockholm.jpg",
   "kilchurn-castle-schottland.jpg",
-  "boston-Harbor-Boston-MA-USA.jpg",
+  "boston-harbor-boston-ma-usa.jpg",
 ];
 
 function generateTemplate() {
