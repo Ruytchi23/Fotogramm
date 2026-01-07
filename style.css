@@ -107,3 +107,10 @@ dialog::backdrop {
   font-size: 34px;
   color: white;
 }
+
+@media (max-width: 360px) {
+  .img_size {
+    width: 300px;
+  height: 200px;
+  }
+}

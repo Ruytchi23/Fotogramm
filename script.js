@@ -1,12 +1,12 @@
 const myImg = [
   "berlin.jpg",
-  "Finland.jpg",
-  "Holland.jpg",
-  "London.jpg",
-  "NewYork.jpg",
+  "finland.jpg",
+  "holland.jpg",
+  "london.jpg",
+  "newYork.jpg",
   "stockholm.jpg",
   "kilchurn-castle-schottland.jpg",
-  "Boston-Harbor-Boston-MA-USA.jpg",
+  "boston-Harbor-Boston-MA-USA.jpg",
 ];
 
 function generateTemplate() {
@@ -65,4 +65,17 @@ function next() {
       }
     }
   }
+}
+
+function logdownprevention(event) {
+  console.log("stop?");
+  event.stopPropagation();
+}
+
+
+function backdropEvent(event) {
+
+
+document.addEventListener('click', (event))
+const isInDialog = event.target.closest('dialog');	
 }
